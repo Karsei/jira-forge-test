@@ -1,0 +1,17 @@
+modules:
+  jira:globalPage:
+    - key: report-tool-hello-world-page
+      resource: main
+      resolver:
+        function: resolver
+      title: report-tool
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+  - key: weekly-report
+    path: static/weekly-report/dist
+app:
+  id: 
