@@ -14,10 +14,12 @@
     "@atlaskit/form": "^8.5.7",
     "@atlaskit/user-picker": "^9.3.2",
     "@forge/bridge": "^2.4.0",
+    "process": "^0.11.10",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "@types/node": "^18.7.13",
     "@types/react": "^16.8.25",
     "@types/react-dom": "^16.8.5",
     "@vitejs/plugin-react": "^2.0.1",

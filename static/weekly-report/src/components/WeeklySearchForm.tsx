@@ -1,17 +1,34 @@
-import React from "react"
-import {Option, Select} from "@forge/ui"
-import ForgeUI, { UserPicker } from "@forge/ui"
+import React from 'react'
+import Button from '@atlaskit/button'
+import { DatePicker } from '@atlaskit/datetime-picker'
+import Form, { Field, FormFooter, HelperMessage } from '@atlaskit/form'
 
 const WeeklySearchForm = function () {
     return (
-        <div>
-            <Select label="With a defaultSelected" name="milestone">
-                <Option defaultSelected label="Milestone 1" value="weekly" />
-                <Option label="Milestone 2" value="weekl" />
-                <Option label="Milestone 3" value="three" />
-            </Select>
-            <UserPicker label="User" name="user" />
-        </div>
+        <Form
+            onSubmit={(formState: unknown) => console.log('form submitted', formState)}
+        >
+            {({ formProps }) => (
+                <form {...formProps}>
+                    <Field
+                        name={"startDate"}
+                        label={"시작 날짜"}
+                        isRequired={true}
+                        defaultValue={""}
+                    >
+                        {({ fieldProps }) => (
+                            <>
+                                <DatePicker {...fieldProps} />
+                                <HelperMessage>Help or instruction text goes here</HelperMessage>
+                            </>
+                        )}
+                    </Field>
+                    <FormFooter>
+                        <Button type="submit" appearance={"primary"}>조회</Button>
+                    </FormFooter>
+                </form>
+            )}
+        </Form>
     )
 }
 
