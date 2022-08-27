@@ -1,5 +1,5 @@
-import React from 'react';
-import './App.css';
+import React, { useState } from 'react';
+import ExcelResult from './components/ExcelResult';
 import WeeklySearchForm from './components/WeeklySearchForm';
 
 function App() {
@@ -9,8 +9,9 @@ function App() {
   //     invoke('getText', { example: 'my-invoke-variable' }).then(setData);
   // }, []);
   return (
-    <div className="asfsdf">
+    <div>
       <WeeklySearchForm />
+      <ExcelResult />
     </div>
   );
 }
