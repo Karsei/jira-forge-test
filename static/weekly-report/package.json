@@ -9,6 +9,7 @@
     "@atlaskit/user-picker": "^9.3.2",
     "@forge/bridge": "^2.4.0",
     "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^12.1.5",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "5.0.1",
