@@ -2,8 +2,6 @@ modules:
   jira:globalPage:
     - key: report-tool-hello-world-page
       resource: weekly-report
-      resolver:
-        function: resolver
       title: report-tool
   function:
     - key: resolver
@@ -14,8 +12,11 @@ resources:
     tunnel:
       port: 3000
 app:
-  id: ari:cloud:ecosystem::app/24ca7965-9da1-4db4-a196-9688d9e2f525
+  id:
+  name: test app
 permissions:
+  scopes:
+    - "read:jira-work"
   content:
     styles:
       - "unsafe-inline"
