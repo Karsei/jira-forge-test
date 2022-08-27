@@ -10,10 +10,12 @@ modules:
       handler: index.handler
 resources:
   - key: weekly-report
-    path: static/weekly-report/dist
+    path: static/weekly-report/build
+    tunnel:
+      port: 3000
 app:
-  id: 
+  id: ari:cloud:ecosystem::app/24ca7965-9da1-4db4-a196-9688d9e2f525
 permissions:
   content:
     styles:
-      - 'unsafe-inline'
+      - "unsafe-inline"
