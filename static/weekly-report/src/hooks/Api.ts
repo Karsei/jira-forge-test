@@ -4,7 +4,7 @@ export function requestJira(pUrl: string): Promise<Response> {
   return fetch(`https://gdomaindev.atlassian.net${pUrl}`, {
     method: 'GET',
     headers: {
-      Authorization: `Basic ${Buffer.from('leejy@gabia.com:Tvil5GwdANfpvLJ751de9F87').toString('base64')}`,
+      Authorization: `Basic ${Buffer.from('').toString('base64')}`,
       Accept: 'application/json',
     },
   });
