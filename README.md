@@ -1,4 +1,4 @@
-# jira-forge-test
+# jira-forge-demo
 
 forge 를 이용한 jira 앱 등록 테스트
 
@@ -7,7 +7,7 @@ forge 를 이용한 jira 앱 등록 테스트
 * NodeJS v16.14
 * React 16.8.6
 
-> Atlaskit 자체가 React 16 버전을 이용하고 있기 때문에 위 React 버전은 변경될 수 없습니다.
+> Atlaskit 자체가 React 16 버전을 이용하고 있기 때문에 위 React 버전은 변경될 수 없다.
 
 ## Usage
 
@@ -21,7 +21,7 @@ $ npm install -g @forge/cli
 
 2. self signed certificate 오류 무시
 
-하드코딩으로 아래 코드를 넣어줍니다.
+하드코딩으로 아래 코드를 넣어준다.
 
 ```javascript
 // global 로 설치된 forge-cli 경로
@@ -43,13 +43,13 @@ $ npm run ready
 
 ### Jira 에 Deploy
 
-build 하고 Jira 에 앱을 deploy 하면서 개발해야 합니다.
+build 하고 Jira 에 앱을 deploy 하면서 개발해야 한다.
 
 ```bash
 $ npm run deploy
 ```
 
-현재 Jira 에 해당 앱이 없다면 아래 항목을 추가적으로 진행합니다.
+현재 Jira 에 해당 앱이 없다면 아래 항목을 추가적으로 진행해야 한다.
 
 ### Jira 에 아직 앱이 등록되지 않았을 경우
 
